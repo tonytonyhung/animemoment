@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+    <leduyhung.view.myprogress.loading.dot.LoadingDotView
+        android:id="@+id/loading_dot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_loading_dot"
+        android:layout_centerInParent="true"
+        custom:loading_dot_color="@color/colorWhite"
+        custom:loading_dot_distance="@dimen/distance_loading_dot"
+        custom:loading_dot_radius="@dimen/radius_loading_dot"/>
+</RelativeLayout>

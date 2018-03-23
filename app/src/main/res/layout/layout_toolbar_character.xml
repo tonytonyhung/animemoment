@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_toolbar">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="@dimen/height_toolbar"
+        android:layout_height="@dimen/height_toolbar"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/ic_back_white"/>
+
+    <leduyhung.me.animemoment.core.view.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_toolbar"
+        app:width_ic_search="@dimen/height_toolbar"
+        app:height_ic_search="@dimen/height_toolbar"
+        app:width_etxt_search="@dimen/width_search_view"
+        app:height_etxt_search="@dimen/height_toolbar"/>
+</RelativeLayout>

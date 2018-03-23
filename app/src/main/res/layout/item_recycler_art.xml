@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/width_height_image_character"
+                android:layout_height="@dimen/width_height_image_character"
+                android:background="@color/colorTransparent"
+                android:clickable="false"
+                android:focusableInTouchMode="false">
+
+    <ImageView
+        android:id="@+id/img_character"
+        android:layout_width="@dimen/width_height_image_character"
+        android:layout_height="@dimen/width_height_image_character"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:id="@+id/item_character"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"/>
+</RelativeLayout>

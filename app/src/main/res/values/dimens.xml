@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_loading_dot">@dimen/_40sdp</dimen>
+    <dimen name="radius_loading_dot">@dimen/_5sdp</dimen>
+    <dimen name="distance_loading_dot">@dimen/_5sdp</dimen>
+
+    <dimen name="height_toolbar">@dimen/_45sdp</dimen>
+    <dimen name="layer_avatar_character">@dimen/_87sdp</dimen>
+
+    <dimen name="line_1">@dimen/_1sdp</dimen>
+    <dimen name="line_2">@dimen/_2sdp</dimen>
+    <dimen name="line_3">@dimen/_3sdp</dimen>
+    <dimen name="line_4">@dimen/_4sdp</dimen>
+    <dimen name="line_5">@dimen/_5sdp</dimen>
+
+    <dimen name="text_big">@dimen/_39ssp</dimen>
+    <dimen name="text_large_3">@dimen/_35ssp</dimen>
+    <dimen name="text_large_2">@dimen/_24ssp</dimen>
+    <dimen name="text_large_1">@dimen/_19ssp</dimen>
+    <dimen name="text_large">@dimen/_16ssp</dimen>
+    <dimen name="text_normal">@dimen/_13ssp</dimen>
+    <dimen name="text_small">@dimen/_11ssp</dimen>
+    <dimen name="text_tiny">@dimen/_9ssp</dimen>
+
+    <dimen name="margin_biggest_2">@dimen/_100sdp</dimen>
+    <dimen name="margin_biggest">@dimen/_80sdp</dimen>
+    <dimen name="margin_big">@dimen/_40sdp</dimen>
+    <dimen name="margin_large">@dimen/_30sdp</dimen>
+    <dimen name="margin_normal">@dimen/_20sdp</dimen>
+    <dimen name="margin_small">@dimen/_10sdp</dimen>
+    <dimen name="margin_tiny">@dimen/_5sdp</dimen>
+
+    <dimen name="icon_big">@dimen/_100sdp</dimen>
+    <dimen name="icon_large">@dimen/_80sdp</dimen>
+    <dimen name="icon_normal">@dimen/_60sdp</dimen>
+    <dimen name="icon_small">@dimen/_35sdp</dimen>
+    <dimen name="icon_tiny">@dimen/_25sdp</dimen>
+
+    <dimen name="card_height_category">@dimen/_80sdp</dimen>
+
+    <dimen name="appbar_height_toolbar">@dimen/_280sdp</dimen>
+
+    <dimen name="button_width_login">@dimen/_210sdp</dimen>
+    <dimen name="button_height_login">@dimen/_40sdp</dimen>
+
+    <dimen name="width_search_view">@dimen/_200sdp</dimen>
+
+    <dimen name="button_width_view_category">@dimen/_260sdp</dimen>
+    <dimen name="button_height_view_category">@dimen/_50sdp</dimen>
+
+    <dimen name="width_item_character">@dimen/_140sdp</dimen>
+    <dimen name="height_item_character">@dimen/_180sdp</dimen>
+    <dimen name="width_height_image_character">@dimen/_130sdp</dimen>
+
+    <dimen name="width_item_character_clip">@dimen/_120sdp</dimen>
+    <dimen name="height_item_character_clip">@dimen/_120sdp</dimen>
+
+    <dimen name="width_button_dialog">@dimen/_100sdp</dimen>
+    <dimen name="height_button_dialog">@dimen/_50sdp</dimen>
+</resources>

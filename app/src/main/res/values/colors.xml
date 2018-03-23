@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#591e34</color>
+    <color name="colorPrimaryDark">#38141d</color>
+    <color name="colorAccent">#763850</color>
+    <color name="colorWhite">#d6d6d6</color>
+    <color name="colorBlack">#414141</color>
+    <color name="colorRed">#ff5d30</color>
+    <color name="colorTransparent">#5f030303</color>
+
+    <color name="colorFacebookLogin">#587bc4</color>
+    <color name="colorFacebookLoginClick">#395fae</color>
+    <color name="colorTryDemo">#632bd1</color>
+    <color name="colorTryDemoClick">#4e16ba</color>
+    <color name="colorButtonView">#d47014</color>
+    <color name="colorButtonViewClick">#b35e10</color>
+</resources>

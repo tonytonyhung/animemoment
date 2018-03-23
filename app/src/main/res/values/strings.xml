@@ -1,0 +1,39 @@
+<resources>
+    <string name="facebook_app_id">871148803067551</string>
+    <string name="fb_login_protocol_scheme">fb871148803067551</string>
+    <string name="ads_id">ca-app-pub-7174379051734302~5182805775</string>
+    <string name="ads_reward">ca-app-pub-7174379051734302/4851633284</string>
+    <string name="ads_no_reward">ca-app-pub-7174379051734302/2357385785</string>
+    <!--<string name="ads_reward">ca-app-pub-3940256099942544/5224354917</string>-->
+    <!--<string name="ads_no_reward">ca-app-pub-3940256099942544/1033173712</string>-->
+    <string name="app_name">Anime moment</string>
+    <string name="fan_art">Fan art</string>
+
+    <string name="server_maintain">The server is under maintenance. PLease try again later!</string>
+    <string name="no_connect_internet">No internet connect.</string>
+    <string name="facebook_login_error">Facebook error! please login again</string>
+    <string name="app_need_update">Your version of the app is too old. Update now!</string>
+    <string name="tap_again_to_exit">Tap again to exit!</string>
+    <string name="no_data_found">We will be completed soon!</string>
+    <string name="this_function_will_be_update_in_next_version">This function will be update in next version !</string>
+
+    <string name="login_facebook">Login with facebook</string>
+    <string name="retry">Retry</string>
+    <string name="or">Or</string>
+    <string name="login_later">I Login later</string>
+    <string name="see_now">see now</string>
+    <string name="type_name_character_here">Type Name\'s character!</string>
+
+    <string name="info">Info</string>
+    <string name="gallery">Gallery</string>
+    <string name="clip">Clip</string>
+
+    <string name="this_video_have_advertisement"> This video have advertisement</string>
+    <string name="saving">saving...</string>
+    <string name="cannot_save_the_image_to_device">Can save the image to device</string>
+
+    <string name="ok">OK</string>
+    <string name="you_will_see_more_advertise">You will see more advertise. To avoid advertise, just login with facebook.</string>
+    <string name="click_to_ads_for_no_show_next_time">Please click to this ads and it no show for next time</string>
+    <string name="wait_ads_complete_to_view_clip">You need to finish watching ads to watch the video</string>
+</resources>

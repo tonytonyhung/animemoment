@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="server_maintain">Hệ thống đang cập nhật, lát sau quay lại bạn nhé !</string>
+    <string name="no_connect_internet">Chưa mở internet hả bạn, mở lên đi nhé để sử dụng.</string>
+    <string name="facebook_login_error">Hệ thống facebook đang bị lỗi rồi !</string>
+    <string name="app_need_update">App trên máy bạn cũ quá, lên google play để cập nhật bản mới nào !</string>
+    <string name="tap_again_to_exit">Nhấn thêm lần nữa để thoát nhé !</string>
+    <string name="no_data_found">Mình sẽ cập nhật thêm</string>
+    <string name="this_function_will_be_update_in_next_version">Chức năng này bản mới sẽ có nhé !</string>
+
+    <string name="login_facebook">Đăng nhập với facebook</string>
+    <string name="retry">Thử lại</string>
+    <string name="or">Hoặc</string>
+    <string name="login_later">Xem trước đã</string>
+    <string name="see_now">Xem ngay</string>
+    <string name="type_name_character_here">Tên nhân vậy</string>
+
+    <string name="info">Thông tin</string>
+    <string name="gallery">Ảnh</string>
+    <string name="clip">Video</string>
+
+    <string name="this_video_have_advertisement">Video này có chứa quảng cáo</string>
+    <string name="saving">Đã lưu thành công</string>
+    <string name="can_save_the_image_to_device">Ảnh lưu thất </string>
+
+    <string name="ok">Hiểu</string>
+    <string name="you_will_see_more_advertise">Bạn sẽ gặp nhiều quảng cáo hơn so với đăng nhập facebook nhé !</string>
+    <string name="click_to_ads_for_no_show_next_time">Không muốn thấy quảng cáo nữa thì nhấn vào nó 1 cái nhé !</string>
+    <string name="wait_ads_complete_to_view_clip">Xem xong quảng cáo rồi mới tắt nhé cho clip nó tải kịp !</string>
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "376643421517",
+    "firebase_url": "https://anime-moment.firebaseio.com",
+    "project_id": "anime-moment",
+    "storage_bucket": "anime-moment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376643421517:android:90b9eca06f824559",
+        "android_client_info": {
+          "package_name": "leduyhung.me.animemoment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376643421517-tvd5kqd1jcbf9o53b46ncqjtj1lf9mse.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "leduyhung.me.animemoment",
+            "certificate_hash": "7d10f351970fa34a99c90001811b1179aa7633cd"
+          }
+        },
+        {
+          "client_id": "376643421517-ca4qcugia4tc7qa7e71ds64alnud46gh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxehonJOzkrrKnfUZ7-XMRWIkm89ZE1Yw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376643421517-ca4qcugia4tc7qa7e71ds64alnud46gh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
