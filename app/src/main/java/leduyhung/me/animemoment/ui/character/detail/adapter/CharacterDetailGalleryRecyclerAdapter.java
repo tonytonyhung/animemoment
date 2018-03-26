@@ -75,7 +75,7 @@ public class CharacterDetailGalleryRecyclerAdapter extends RecyclerView.Adapter 
         setAnimation(holder.itemView, position);
         if (holder instanceof ItemVIew) {
             ((ItemVIew) holder).tName.setText(lsData.get(position).getName());
-            ImageUtil.newInstance().showImageFromInternet(lsData.get(position).getThumbnail(), ((ItemVIew) holder).iCharacter,
+            ImageUtil.newInstance().showImageFromInternet(lsData.get(position).getUrl(), ((ItemVIew) holder).iCharacter,
                     mContext.getResources().getInteger(R.integer.img_normal), mContext.getResources().getInteger(R.integer.img_normal), null);
             ((ItemVIew) holder).item.setOnClickListener(new View.OnClickListener() {
                 @Override

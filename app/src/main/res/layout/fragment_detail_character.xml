@@ -93,7 +93,7 @@
         android:background="?attr/colorPrimary"
         app:contentInsetLeft="0dp"
         app:contentInsetStart="0dp"
-        app:layout_behavior="leduyhung.me.anime.ui.character.detail.behaviors.ToolbarBehavior"
+        app:layout_behavior="leduyhung.me.animemoment.ui.character.detail.behaviors.ToolbarBehavior"
         app:layout_collapseMode="pin">
 
         <android.support.constraint.ConstraintLayout
@@ -120,7 +120,7 @@
         android:layout_width="@dimen/icon_small"
         android:layout_height="@dimen/icon_small"
         android:src="@drawable/img_wait_image"
-        app:layout_behavior="leduyhung.me.anime.ui.character.detail.behaviors.AvatarBehavior"/>
+        app:layout_behavior="leduyhung.me.animemoment.ui.character.detail.behaviors.AvatarBehavior"/>
 
     <TextView
         android:id="@+id/txt_avatar"
@@ -130,7 +130,7 @@
         android:maxLines="1"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/text_tiny"
-        app:layout_behavior="leduyhung.me.anime.ui.character.detail.behaviors.NameBehavior"/>
+        app:layout_behavior="leduyhung.me.animemoment.ui.character.detail.behaviors.NameBehavior"/>
 
     <leduyhung.view.myprogress.loading.dot.LoadingDotView
         android:id="@+id/loading_dot"

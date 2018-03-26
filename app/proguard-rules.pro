@@ -79,10 +79,10 @@
 
 #RETROFIT2
 #-keep public class leduyhung.me.anime.module.** {*;}
--keep public class leduyhung.me.anime.module.category.data.** {*;}
--keep public class leduyhung.me.anime.module.character.data.** {*;}
--keep public class leduyhung.me.anime.module.media.data.** {*;}
--keep public class leduyhung.me.anime.module.user.** {*;}
+-keep public class leduyhung.me.animemoment.module.category.data.** {*;}
+-keep public class leduyhung.me.animemoment.module.character.data.** {*;}
+-keep public class leduyhung.me.animemoment.module.media.data.** {*;}
+-keep public class leduyhung.me.animemoment.module.user.** {*;}
 
 -dontwarn retrofit2.**
 -dontwarn org.codehaus.mojo.**

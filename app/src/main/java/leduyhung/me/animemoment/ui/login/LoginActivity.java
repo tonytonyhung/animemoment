@@ -56,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
         relativeLayout = findViewById(R.id.frame);
         loadingDotView = findViewById(R.id.loading_dot);
         Category.newInstance().addContext(this);
-
+        Category.newInstance().getData(true);
         requestPermisson();
 
         EventBus.getDefault().register(this);

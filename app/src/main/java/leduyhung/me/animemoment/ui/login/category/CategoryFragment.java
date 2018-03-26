@@ -32,6 +32,7 @@ import leduyhung.me.animemoment.module.category.data.CategoryInfo;
 import leduyhung.me.animemoment.module.character.Character;
 import leduyhung.me.animemoment.ui.character.CharacterActivity;
 import leduyhung.me.animemoment.ui.login.category.adapter.CatelogyRecyclerAdapter;
+import leduyhung.me.animemoment.util.ClientUtil;
 import leduyhung.me.animemoment.util.ToastUtil;
 
 public class CategoryFragment extends Fragment {
@@ -113,9 +114,9 @@ public class CategoryFragment extends Fragment {
                     public void onPositiveButtonClick() {
 
                         try {
-                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=leduyhung.me.anime")));
+                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + ClientUtil.getPakageName(mContext))));
                         } catch (android.content.ActivityNotFoundException anfe) {
-                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=leduyhung.me.anime")));
+                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + ClientUtil.getPakageName(mContext))));
                         } finally {
 
                             android.os.Process.killProcess(android.os.Process.myPid());
