@@ -20,6 +20,7 @@ public class DialogOk extends Dialog{
     public DialogOk(@NonNull Context context) {
         super(context);
         this.mContext = context;
+        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
     }
 
     @Override
@@ -47,7 +48,7 @@ public class DialogOk extends Dialog{
             WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
             Window window = this.getWindow();
             lp.copyFrom(window.getAttributes());
-            lp.width = WindowManager.LayoutParams.MATCH_PARENT;
+            lp.width = WindowManager.LayoutParams.WRAP_CONTENT;
             lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
             window.setAttributes(lp);
             setCancelable(cancelAble);

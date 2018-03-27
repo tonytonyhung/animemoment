@@ -10,14 +10,15 @@
         android:layout_marginLeft="@dimen/margin_normal"
         android:layout_marginRight="@dimen/margin_normal"
         android:textColor="@color/colorBlack"
+        android:layout_margin="@dimen/margin_small"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:textSize="@dimen/text_large"/>
+        android:textSize="@dimen/text_normal"/>
 
     <android.support.v4.widget.Space
         android:id="@+id/space"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/margin_large"
+        android:layout_height="@dimen/margin_tiny"
         android:layout_below="@id/txt_content"/>
 
     <TextView
