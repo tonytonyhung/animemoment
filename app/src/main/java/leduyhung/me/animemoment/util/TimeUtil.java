@@ -1,7 +1,5 @@
 package leduyhung.me.animemoment.util;
 
-import android.os.Bundle;
-
 public class TimeUtil {
 
     private static TimeUtil timeUtil;

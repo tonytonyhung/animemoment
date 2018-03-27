@@ -139,6 +139,10 @@ public class ImageCharacterFragment extends Fragment {
                             public void onAdOpened() {
                                 super.onAdOpened();
 
+                                if (User.newInstance().isUserLogin()) {
+
+                                    User.newInstance().getUserInfo().setAds(User.newInstance().getUserInfo().getAds() + 5);
+                                }
                                 ToastUtil.newInstance().showToast(mContext,
                                         mContext.getResources().getString(R.string.click_to_ads_for_no_show_next_time),
                                         Toast.LENGTH_LONG);
@@ -153,11 +157,6 @@ public class ImageCharacterFragment extends Fragment {
                             @Override
                             public void onAdClicked() {
                                 super.onAdClicked();
-
-                                if (User.newInstance().isUserLogin()) {
-
-                                    User.newInstance().getUserInfo().setAds(User.newInstance().getUserInfo().getAds() + 10);
-                                }
                             }
 
                             @Override

@@ -112,7 +112,7 @@ public class DetailCharacterFragment extends Fragment implements View.OnClickLis
         lsDataClip = new ArrayList();
         configRecyclerGallery();
         Media.newInstance().addContext(mContext).getMedia(pageGallery, characterInfo.getId(), MediaResponse.TYPE_GALLERY, true);
-        Media.newInstance().addContext(mContext).getMedia(pageClip, characterInfo.getId(), MediaResponse.TYPE_CLIP, true);
+        Media.newInstance().addContext(mContext).getMedia(pageClip, characterInfo.getId(), MediaResponse.TYPE_CLIP, false);
     }
 
     @Override
@@ -138,31 +138,41 @@ public class DetailCharacterFragment extends Fragment implements View.OnClickLis
                     lsDataGallery.clear();
                     lsDataGallery.addAll(message.getData().getData());
                     adapGallery.configLoadmore();
+                    adapGallery.notifyDataSetChanged();
 
                 } else {
 
                     lsDataGallery.remove(lsDataGallery.size() - 1);
                     adapGallery.notifyItemRemoved(lsDataGallery.size());
-                    lsDataGallery.addAll(message.getData().getData());
+                    for (MediaInfo mediaInfo : message.getData().getData()) {
+
+                        lsDataGallery.add(mediaInfo);
+                        adapGallery.notifyItemInserted(lsDataGallery.size() - 1);
+                    }
                     adapGallery.setRecyclerLoadMore(false);
                 }
-                adapGallery.notifyDataSetChanged();
                 break;
             case MessageForDetailCharacterFragment.CODE_LOAD_MEDIA_CLIP_SUCCESS:
                 loadingDotView.showLoading(false);
                 totalPageClip = message.getData().getTotal_page();
-                if (pageClip == 1) {
-                    lsDataClip.clear();
-                    lsDataClip.addAll(message.getData().getData());
-                    adapClip.configLoadmore();
-                } else {
+                if (adapClip != null) {
+                    if (pageClip == 1) {
+                        lsDataClip.clear();
+                        lsDataClip.addAll(message.getData().getData());
+                        adapClip.configLoadmore();
+                        adapClip.notifyDataSetChanged();
+                    } else {
 
-                    lsDataClip.remove(lsDataClip.size() - 1);
-                    adapClip.notifyItemRemoved(lsDataClip.size());
-                    lsDataClip.addAll(message.getData().getData());
-                    adapClip.setRecyclerLoadMore(false);
+                        lsDataClip.remove(lsDataClip.size() - 1);
+                        adapClip.notifyItemRemoved(lsDataClip.size());
+                        for (MediaInfo mediaInfo : message.getData().getData()) {
+
+                            lsDataClip.add(mediaInfo);
+                            adapClip.notifyItemInserted(lsDataGallery.size() - 1);
+                        }
+                        adapClip.setRecyclerLoadMore(false);
+                    }
                 }
-                adapClip.notifyDataSetChanged();
                 break;
             case MessageForDetailCharacterFragment.CODE_LOAD_MEDIA_IMG_FAIL:
                 loadingDotView.showLoading(false);
@@ -174,10 +184,12 @@ public class DetailCharacterFragment extends Fragment implements View.OnClickLis
                 break;
             case MessageForDetailCharacterFragment.CODE_LOAD_MEDIA_CLIP_FAIL:
                 loadingDotView.showLoading(false);
-                if (pageClip > 1 && adapClip.getRecyclerLoadMore()) {
+                if (adapClip != null) {
+                    if (pageClip > 1 && adapClip.getRecyclerLoadMore()) {
 
-                    lsDataClip.remove(lsDataClip.size() - 1);
-                    adapClip.notifyItemRemoved(lsDataClip.size());
+                        lsDataClip.remove(lsDataClip.size() - 1);
+                        adapClip.notifyItemRemoved(lsDataClip.size());
+                    }
                 }
                 break;
         }

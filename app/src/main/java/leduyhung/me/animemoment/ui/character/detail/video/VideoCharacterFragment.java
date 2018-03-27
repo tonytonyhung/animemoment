@@ -140,11 +140,11 @@ public class VideoCharacterFragment extends Fragment {
         if (User.newInstance().addContext(mContext).isUserLogin()) {
             if (User.newInstance().getUserInfo().getAds() < ads) {
 
+                ToastUtil.newInstance().showToast(mContext, mContext.getResources().getString(R.string.wait_ads_complete_to_view_clip), Toast.LENGTH_LONG);
                 adsUtil.initAdsReward(new RewardedVideoAdListener() {
                     @Override
                     public void onRewardedVideoAdLoaded() {
 
-                        ToastUtil.newInstance().showToast(mContext, mContext.getResources().getString(R.string.wait_ads_complete_to_view_clip), Toast.LENGTH_LONG);
                         adsUtil.showAdsReward();
                     }
 
@@ -161,14 +161,13 @@ public class VideoCharacterFragment extends Fragment {
                     @Override
                     public void onRewardedVideoAdClosed() {
 
-
                     }
 
                     @Override
                     public void onRewarded(RewardItem rewardItem) {
 
                         if (rewardItem.getAmount() > 0) {
-
+                            User.newInstance().getUserInfo().setAds(User.newInstance().getUserInfo().getAds() + rewardItem.getAmount());
                             Logg.error(getClass(), rewardItem.getAmount() + " -- " + rewardItem.getType());
                             User.newInstance().getUserInfo().setAds(User.newInstance().getUserInfo().getAds() + rewardItem.getAmount() - ads);
                             loadingDotView.showLoading(true);
@@ -195,11 +194,11 @@ public class VideoCharacterFragment extends Fragment {
             }
         } else {
 
+            ToastUtil.newInstance().showToast(mContext, mContext.getResources().getString(R.string.wait_ads_complete_to_view_clip), Toast.LENGTH_LONG);
             adsUtil.initAdsReward(new RewardedVideoAdListener() {
                 @Override
                 public void onRewardedVideoAdLoaded() {
 
-                    ToastUtil.newInstance().showToast(mContext, mContext.getResources().getString(R.string.wait_ads_complete_to_view_clip), Toast.LENGTH_LONG);
                     adsUtil.showAdsReward();
                 }
 

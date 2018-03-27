@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Slide;
 import android.transition.Transition;
+import android.widget.Toast;
+
+import com.leduyhung.loglibrary.Logg;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -19,6 +22,7 @@ import leduyhung.me.animemoment.ui.character.detail.gallery.GalleryCharacterFrag
 import leduyhung.me.animemoment.ui.character.detail.video.VideoCharacterFragment;
 import leduyhung.me.animemoment.ui.character.list.ListCharacterFragment;
 import leduyhung.me.animemoment.ui.login.category.CategoryFragment;
+import leduyhung.me.animemoment.util.ToastUtil;
 
 public class CharacterActivity extends AppCompatActivity {
 
@@ -64,8 +68,10 @@ public class CharacterActivity extends AppCompatActivity {
         } else if (detailCharacterFragment != null && detailCharacterFragment.isAdded()) {
 
             if ((galleryCharacterFragment != null && galleryCharacterFragment.isAdded()) ||
-                    (videoCharacterFragment != null && videoCharacterFragment.isAdded()))
+                    (videoCharacterFragment != null && videoCharacterFragment.isAdded())) {
+
                 super.onBackPressed();
+            }
             else
                 showListCharacterFragment();
         } else {

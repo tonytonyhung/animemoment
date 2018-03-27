@@ -44,7 +44,7 @@ public class Media {
         return media;
     }
 
-    public void getMedia(int page, final int characterId, final int type, final boolean needEvent) {
+    public synchronized void getMedia(int page, final int characterId, final int type, final boolean needEvent) {
 
         countTask++;
         mediaResponse = Appdatabase.newInstance(mContext).mediaDao().getMediaByPage(page, characterId, type, 0);

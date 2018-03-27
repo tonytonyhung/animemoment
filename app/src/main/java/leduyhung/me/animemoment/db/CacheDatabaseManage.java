@@ -73,7 +73,7 @@ public class CacheDatabaseManage {
 
     private void saveCategory(CategoryInfo categoryInfo) {
         Calendar c = Calendar.getInstance();
-        c.add(Calendar.DATE, 7);
+        c.add(Calendar.HOUR, 4);
         categoryInfo.setSave_date(c.getTime());
         Appdatabase.newInstance(mContext).categoryDao().insertCategory(categoryInfo);
     }
