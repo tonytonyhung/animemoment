@@ -108,21 +108,26 @@ public class ListArtFragment extends Fragment implements View.OnClickListener {
                     lsData.clear();
                     lsData.addAll(message.getData().getData());
                     adap.configLoadmore();
+                    adap.notifyDataSetChanged();
 
                 } else {
 
                     lsData.remove(lsData.size() - 1);
                     adap.notifyItemRemoved(lsData.size());
-                    lsData.addAll(message.getData().getData());
+                    for (MediaInfo mediaInfo : message.getData().getData()) {
+
+                        lsData.add(mediaInfo);
+                        adap.notifyItemInserted(lsData.size() - 1);
+                    }
                     adap.setRecyclerLoadMore(false);
                 }
-                adap.notifyDataSetChanged();
                 break;
             case MessageForDetailCharacterFragment.CODE_LOAD_MEDIA_IMG_FAIL:
                 if (page > 1 && adap.getRecyclerLoadMore()) {
 
                     lsData.remove(lsData.size() - 1);
                     adap.notifyItemRemoved(lsData.size());
+                    adap.setRecyclerLoadMore(false);
                 }
                 break;
         }

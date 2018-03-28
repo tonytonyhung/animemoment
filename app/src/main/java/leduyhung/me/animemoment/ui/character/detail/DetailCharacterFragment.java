@@ -180,6 +180,7 @@ public class DetailCharacterFragment extends Fragment implements View.OnClickLis
 
                     lsDataGallery.remove(lsDataGallery.size() - 1);
                     adapGallery.notifyItemRemoved(lsDataGallery.size());
+                    adapGallery.setRecyclerLoadMore(false);
                 }
                 break;
             case MessageForDetailCharacterFragment.CODE_LOAD_MEDIA_CLIP_FAIL:
@@ -189,6 +190,7 @@ public class DetailCharacterFragment extends Fragment implements View.OnClickLis
 
                         lsDataClip.remove(lsDataClip.size() - 1);
                         adapClip.notifyItemRemoved(lsDataClip.size());
+                        adapClip.setRecyclerLoadMore(false);
                     }
                 }
                 break;
