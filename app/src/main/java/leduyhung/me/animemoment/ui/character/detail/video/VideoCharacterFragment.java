@@ -170,8 +170,6 @@ public class VideoCharacterFragment extends Fragment {
                             User.newInstance().getUserInfo().setAds(User.newInstance().getUserInfo().getAds() + rewardItem.getAmount());
                             Logg.error(getClass(), rewardItem.getAmount() + " -- " + rewardItem.getType());
                             User.newInstance().getUserInfo().setAds(User.newInstance().getUserInfo().getAds() + rewardItem.getAmount() - ads);
-                            loadingDotView.showLoading(true);
-                            initializePlayer();
                         }
                     }
 
@@ -189,8 +187,6 @@ public class VideoCharacterFragment extends Fragment {
             } else {
 
                 User.newInstance().getUserInfo().setAds(User.newInstance().getUserInfo().getAds() - ads);
-                loadingDotView.showLoading(true);
-                initializePlayer();
             }
         } else {
 
@@ -223,8 +219,6 @@ public class VideoCharacterFragment extends Fragment {
                     if (rewardItem.getAmount() > 0) {
 
                         Logg.error(getClass(), rewardItem.getAmount() + " -- " + rewardItem.getType());
-                        loadingDotView.showLoading(true);
-                        initializePlayer();
                     }
                 }
 
@@ -236,10 +230,12 @@ public class VideoCharacterFragment extends Fragment {
                 @Override
                 public void onRewardedVideoAdFailedToLoad(int i) {
 
-                    initializePlayer();
                 }
             });
         }
+
+        loadingDotView.showLoading(true);
+        initializePlayer();
     }
 
     private void initializePlayer() {

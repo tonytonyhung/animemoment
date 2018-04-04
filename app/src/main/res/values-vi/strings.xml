@@ -21,7 +21,7 @@
 
     <string name="this_video_have_advertisement">Video này có chứa quảng cáo</string>
     <string name="saving">Đã lưu thành công</string>
-    <string name="can_save_the_image_to_device">Ảnh lưu thất </string>
+    <string name="cannot_save_the_image_to_device">Ảnh lưu thất bại</string>
 
     <string name="ok">Hiểu</string>
     <string name="you_will_see_more_advertise">Bạn sẽ gặp nhiều quảng cáo hơn so với đăng nhập facebook nhé !</string>
